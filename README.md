@@ -1,2 +1,3 @@
 # gradelog
-A grade log to aid colleges grading
+
+A log to help colleges grade students and simplify the process.
