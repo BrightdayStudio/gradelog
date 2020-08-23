@@ -1,0 +1,95 @@
+
+table {
+  border-spacing: 0;
+  display: block;
+  overflow-x: auto;
+  text-align: left;
+  width: 100%;
+}
+
+td,
+th {
+  border-bottom: 0.1rem solid #e1e1e1;
+  padding: 1.2rem 1.5rem;
+}
+
+td:first-child,
+th:first-child {
+  padding-left: 0;
+}
+
+td:last-child,
+th:last-child {
+  padding-right: 0;
+}
+
+@media (min-width: 40rem) {
+  table {
+    display: table;
+    overflow-x: initial;
+  }
+}
+
+
+
+
+main {
+    margin-bottom:3em;
+}
+
+
+
+.grid .header {
+  border-bottom: 1px solid black;
+  margin-bottom:1em;
+}
+
+.grid ul {
+  padding: 0 0 .5em 0 ;
+}
+
+.grid a ul:hover {
+  background-color:#eee;
+}
+
+.grid .colx4 li:last-of-type{
+  text-align: right;
+}
+
+.student.grid ul ul li:nth-child(2){
+  padding: 0 1em;
+}
+
+.student.grid .col1{
+  flex: 1 1 10%;
+}
+.student.grid .col2{
+  flex: 1 1 90%;
+}
+
+
+.keycode {
+  padding-top:3em;
+  font-size: 0.8em;
+}
+
+h1, h4 {
+  margin:0;
+  margin-bottom:1em;
+  line-height: 1.2;
+}
+
+.page .title {
+  margin-bottom:2em;
+}
+
+.title h4 {
+  font-size:0.8em;
+  font-weight: normal;
+  color:#9e9c9c;
+}
+
+
+/* .moreorless {
+  display:none;
+} */
