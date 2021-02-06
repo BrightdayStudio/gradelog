@@ -41,22 +41,21 @@ main {
 
 .grid .header {
   border-bottom: 1px solid black;
-  margin-bottom:1em;
+  border-top: 1px solid black;
+  margin:.5em 0;
 }
 
-.grid ul {
-  padding: 0 0 .5em 0 ;
-}
+
 
 .grid a ul:hover {
   background-color:#eee;
 }
 
-.grid .colx4 li:last-of-type{
+/* .grid .colx4 li:last-of-type{
   text-align: right;
-}
+} */
 
-.student.grid ul ul li:nth-child(2){
+/* .student.grid ul ul li:nth-child(2){
   padding: 0 1em;
 }
 
@@ -65,13 +64,10 @@ main {
 }
 .student.grid .col2{
   flex: 1 1 90%;
-}
+} */
 
 
-.keycode {
-  padding-top:3em;
-  font-size: 0.8em;
-}
+
 
 h1, h4 {
   margin:0;
@@ -93,3 +89,93 @@ h1, h4 {
 /* .moreorless {
   display:none;
 } */
+
+
+.checks, .info {
+  border:solid 1px black;
+  padding:1em;
+  margin-bottom: 1em;
+}
+
+.assessment > *:last-child {
+  margin-left:3em;
+}
+.checks label{
+  position: relative;
+display: inline-block;
+}
+
+.checks label span {
+  visibility: hidden;
+    /* background: #c7c7c7; */
+    background-color: #555;
+    color:#fff;
+    padding: .3em .5em;
+    border-radius: .3em;
+    text-align: left;
+    width: 200px;
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 0px;
+    margin-left: -170px;
+}
+
+.checks label span::after {
+  content: "";
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.checks label:hover > span{
+  visibility: visible;
+  opacity: 1;
+}
+.checks checkbox{
+  margin:0;
+}
+
+
+
+
+.details {
+  justify-content: space-between;
+}
+
+.pill {
+  background: #d4d4d4;
+  margin: 0;
+  border-radius: .2em;
+  padding: .5em 1em;
+  line-height: 1;
+}
+.pill.referral {
+  background:#b54747;
+  color:#fff;
+}
+.pill.pass {
+  background: #519a51;
+  color:#fff;
+}
+.pill.good {
+  background: green;
+  color:#fff;
+}
+.pill.excellent{
+  background: green;
+  color:#fff;
+}
+
+
+.material-icons {
+  transform: translateY(5px);
+}

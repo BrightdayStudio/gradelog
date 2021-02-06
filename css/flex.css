@@ -10,12 +10,57 @@
     display: flex;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    /* align-content: flex-end; */
 }
 
-.flex > * { box-sizing: border-box; padding:.5em;}
+.flex > * { box-sizing: border-box;}
+
+.flex.cols > * {
+      flex: 1 1 40%;
+}
+
+.grid .flex > *:nth-child(1) {
+  width:100px;
+}
+
+.grid .flex.colx3 > *:nth-child(-n+2) {
+  width:100px;
+}
+
+.grid .flex.colx4 > *:nth-child(1) {
+  width:100px;
+}
 
 
+.grid .flex.colx4 > *:nth-child(1) {
+  width:100px;
+}
+.grid .flex.colx4 > *:nth-child(2) {
+  width:150px;
+}
+
+/* .grid .flex.colx4 > *:nth-child(-n+2) {
+  width:100px;
+} */
+
+.grid .flex > * {
+  padding:.3em;
+
+}
+.grid .flex .action {margin-left: auto}
+
+
+
+.student.grid .flex > *:nth-child(-n+3) {
+  width:100px;
+}
+.student.grid .flex > *:first-child{
+  width:20px;
+}
+
+
+/*
 
 .flex.colx3 > *:first-child {
   flex: 1 1 20%; }
@@ -73,4 +118,4 @@
 .tasks .flex  > *:nth-child(2) {
   flex: 1 1 60%; padding-right:1em;}
 .tasks .flex > *:last-child {
-  flex: 1 1 20%;}
+  flex: 1 1 20%;} */

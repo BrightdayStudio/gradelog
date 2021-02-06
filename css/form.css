@@ -63,14 +63,15 @@ fieldset {
 input,
 textarea,
 select {
-  	padding: 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  	padding: 10px; /* vertically centers text on FF, ignored by Webkit */
     width: 100%;
-    background-color: #fff;
+    color:inherit;
+    background-color: transparent;
     box-shadow: none;
     box-sizing: border-box;
     border: 2px solid #c0c1b3;
     border-radius: 4px;
-	-webkit-border-radius: 4px;
+    -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
 }
 
