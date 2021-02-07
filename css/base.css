@@ -2,7 +2,7 @@ body {
     font-family: var(--typeface);
     color: #333;
     background-color:#fff;
-    font-size:18px;
+    font-size:16px;
 }
 
 .fillscreen {
@@ -43,12 +43,7 @@ ol {list-style: decimal inside;}
 ol, ul {
     list-style: none outside; display:inline; margin: 0; padding: 0;
 }
-ul ul,
-ul ol,
-ol ol,
-ol ul {
-    font-size: 90%;
-}
+
 dd {
   margin-left: 0;
 }
@@ -60,9 +55,8 @@ dd {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 a { color:var(--link); text-decoration:none; }
-main p a {text-decoration:underline;}
 
-a:hover {color:var(--hover);}
+a:hover {color:var(--hover); text-decoration: underline;}
 a:focus,
 a:active {
   text-decoration: underline;

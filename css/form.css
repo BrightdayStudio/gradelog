@@ -126,6 +126,7 @@ input[type="radio"]{
     appearance: radio;
     -webkit-appearance: radio;
     -moz-appearance: radio;
+    margin:0;
 	}
 
 input[type="submit"] {width:auto;float:right; border:0; margin:10px 0;}

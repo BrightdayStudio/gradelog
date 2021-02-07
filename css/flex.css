@@ -9,7 +9,7 @@
     display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: flex-start;
     /* align-content: flex-end; */
 }
@@ -20,9 +20,13 @@
       flex: 1 1 40%;
 }
 
+/* .grid .flex.colx5 > *{
+  flex: 1 1 10%;
+} */
 .grid .flex > *:nth-child(1) {
   width:100px;
 }
+
 
 .grid .flex.colx3 > *:nth-child(-n+2) {
   width:100px;
@@ -52,7 +56,7 @@
 
 
 
-.student.grid .flex > *:nth-child(-n+3) {
+.student.grid .flex > *:nth-child(-n+4) {
   width:100px;
 }
 .student.grid .flex > *:first-child{
