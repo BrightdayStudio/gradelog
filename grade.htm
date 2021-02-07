@@ -14,49 +14,77 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body><div class="container">
-  <main class="page">
-        <div class="title">
-            <h4 class="breadcrumbs"><a href="index.html"><span class="material-icons">home</span></a> | *</h4>
+  <main class="page grade">
+            <h4 class="breadcrumbs"><a href="index.html"><span class="material-icons">home</span></a> | breadcrumbs | *</h4>
           <h1>Project 1: Task 1.1</h1>
-      </div>
-<h4>Bugs Bunny</h4>
+      <h4>Bugs Bunny</h4>
 
     <div class="assessment flex cols">
 
       <div class="datacapture">
             <div class="checks">
               <label>
-                <span>All work is completely missing</span>
+
                 <input type="checkbox"name="missing" value="missing">
-                Missing </label><br>
+                Missing
+                <p class="tooltip">
+                  <span class="material-icons">info</span><i>All work is completely missing</i>
+                </p>
+              </label><br>
+
               <label>
-                <span>Some parts are missing</span>
                 <input type="checkbox"name="Incomplete" value="Incomplete">
-              Incomplete </label><br>
-              <label>
-                <span>Cannot read what has been submitted</span>
+              Incomplete
+                <p class="tooltip">
+                  <span class="material-icons">info</span><i>Some parts are missing</i>
+                </p>
+              </label><br>
+                <label>
                 <input type="checkbox"name="Illegible" value="Illegible">
-              Illegible  </label><br>
+              Illegible
+
+              <p class="tooltip">
+                <span class="material-icons">info</span><i>Cannot read what has been submitted</i>
+              </p>
+            </label><br>
               <label>
-                <span>Not competed on time</span>
+
                 <input type="checkbox"name="Late" value="Late">
-              Late </label><br>
+              Late
+
+              <p class="tooltip">
+                <span class="material-icons">info</span><i>Not competed on time</i>
+              </p>
+
+            </label><br>
               <label>
-                <span>Spelling, Grammar and punctuation</span>
+
                 <input type="checkbox"name="English" value="English">
-                Poor English </label><br>
+                Poor English
+                <p class="tooltip">
+                  <span class="material-icons">info</span><i>Spelling, Grammar and punctuation</i>
+                </p>
+              </label><br>
               <label>
-                <span>Cannot view due to sharing permissions error</span>
+
                 <input type="checkbox"name="NoAccess" value="NoAccess">
-              No Access </label><br>
+              No Access
+              <p class="tooltip">
+                <span class="material-icons">info</span><i>Cannot view due to sharing permissions error</i>
+              </p>
+            </label><br>
               <label>
-                <span>Some or All Annotations are missing</span>
+
                 <input type="checkbox"name="No-Annotations" value="No-Annotations">
-              Missing Annotations  </label><br>
+              Missing Annotations
+              <p class="tooltip">
+                <span class="material-icons">info</span><i>Some or All Annotations are missing</i>
+              </p>
+            </label><br>
               <!-- <label><input type="checkbox"name="other" value="other">
               Other </label><br> -->
             </div>
-            <div class="grade">
+            <div class="grades">
               <label class="pill referral"><input type="radio" id="Referal" name="grade" value="Referal" checked>
               Referal</label>
               <label class="pill"><input type="radio" id="Pass" name="grade" value="Pass">
@@ -67,18 +95,21 @@
               Excellent</label>
             </div>
             <div>
-              <textarea name="name" rows="8" cols="80">/Feedback text Updates dependent on selection
-              </textarea><p><a href="javascript:history.back()" class="btn">Save & go back</a></p>
+              <h4>Comments</h4>
+              <textarea name="comments" rows="8" cols="80">Feedback text Updates dependent on selection</textarea>
+              <h4>Action Plan</h4>
+              <textarea name="actionplan" rows="8" cols="80">Feedback text Updates dependent on selection</textarea>
+              <p><a href="javascript:history.back()" class="btn">Save & go back</a></p>
           </div>
+
       </div>
       <div>
         <div class="info">
+          <h2>Task Description</h2>
           <h4>Job Roles</h4>
           <p>Red Leader... This is Gold Leader. We're starting out attack run. I copy, Gold Leader. Move into position. Stay in attack formation! The exhaust post is... marked and locked in! Switch power to front deflector screens. How many guns do you think, Gold Five. I'd say about twenty guns. Some on the surface, some on the towers. Death Star will be in range in five minutes. Switching to targeting computer. Computer's locked. Getting a signal. The guns...they've stopped! Stabilize your read deflectors. Watch for enemy fighters.</p></div>
       </div>
 
-
-    </div>
     </main>
 
   </div>
