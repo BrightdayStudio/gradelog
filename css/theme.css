@@ -2,16 +2,18 @@
 
 table {
   border-spacing: 0;
-  display: block;
+  display: table;
   overflow-x: auto;
   text-align: left;
   width: 100%;
+  border-collapse: collapse;
 }
 
+tr {display: table-row;}
 td,
 th {
   border-bottom: 0.1rem solid #e1e1e1;
-  padding: 1.2rem 1.5rem;
+  padding: 0.5rem;
 }
 
 td:first-child,
@@ -23,10 +25,20 @@ td:last-child,
 th:last-child {
   padding-right: 0;
 }
+thead {
+    display: table-header-group;
+  }
+  tbody {
+    display: table-row-group;
+  }
+  td {
+      display: table-cell;
+    }
+
 
 @media (min-width: 40rem) {
   table {
-    display: table;
+
     overflow-x: initial;
   }
 }

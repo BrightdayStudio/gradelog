@@ -20,10 +20,11 @@ header {
 	margin: auto;
 	max-width: 1080px;
 	padding: 3em;
-
 	box-sizing: border-box;
 }
-
+.bigpage {
+  padding: 1em;
+}
 
 
 /* nav
@@ -157,3 +158,6 @@ h5, h6 {
 /* Larger than phablet */
 /*@media (min-width: 550px) {
 */
+
+
+table p{margin:0;}
