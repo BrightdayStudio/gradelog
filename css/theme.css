@@ -202,7 +202,7 @@ display: inline-block;
 margin-bottom:3em;
 }
 .grade .grades .pill {
-padding: 2em 2.5em;
+padding: 1em 1.5em;
 }
 
 .flags p {
@@ -283,7 +283,7 @@ flex: 0 1 25%;
 
 .action {overflow: auto;}
 .action .btn {
-  float:right;
+
     padding: 1em 2em;
     font-size: 1.2em;
     background: #4183c4;
