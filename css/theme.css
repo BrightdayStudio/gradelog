@@ -41,8 +41,8 @@ main {
 
 
 .grid .header {
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
+  border-bottom: 1px solid #c1c1c1;
+  border-top: 1px solid #c1c1c1;
   margin:.5em 0;
 }
 
@@ -91,11 +91,16 @@ h4.breadcrumbs  {
 
 
 .grade .checks {
-  border:solid 1px black;
-  padding:1em;
   margin-bottom: 1em;
 }
-.grade .info h2 {
+
+.grade .info {
+border-left:solid 1px #c1c1c1;
+padding-left:1em;
+}
+
+
+.grade  h3 {
   margin:0;
 }
 
@@ -181,6 +186,12 @@ display: inline-block;
   color:#fff;
 }
 
+.grade .grades {
+margin-bottom:3em;
+}
+.grade .grades .pill {
+padding: 2em 2.5em;
+}
 
 .flags p {
   display: block;
@@ -195,7 +206,7 @@ display: inline-block;
 
 
 /* .details div div:nth-child(-n+2) {
-  border:solid 1px black;
+  border:solid 1px #c1c1c1;
 } */
 
 /* .grid.feedback {font-size:0.9em;} */
@@ -238,7 +249,7 @@ display: inline-block;
 }
 
 .box {
-  width:100%; display: block; height: 4em; border: solid 1px black; padding: .5em;
+  width:100%; display: block; height: 4em; border: solid 1px #c1c1c1; padding: .5em;
 }
 
 .studentprojectfeedback .details {
@@ -254,6 +265,14 @@ flex: 0 1 25%;
 }
 
 
-.grade .flex > *:first-child {
+.grade .assessment.flex > *:first-child {
   flex: 1 1 70%;
+}
+
+.action {overflow: auto;}
+.action .btn {
+  float:right;
+    padding: 1em 2em;
+    font-size: 1.2em;
+    background: #4183c4;
 }
